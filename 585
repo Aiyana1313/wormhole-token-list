@@ -1,0 +1,12 @@
+git clone git@github.com:OffchainLabs/arbitrum-docs.git
+
+cd arbitrum-docs/
+
+git submodule update --init --recursive
+
+cd website/
+yarn generate_sdk_docs
+yarn start_nitro_docs 
+git@github.com
+yarn
+git submodule update --remote arbitrum-sdk
